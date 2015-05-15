@@ -13,7 +13,7 @@ public class VacationMenu extends PageObject{
 	@FindBy(css="a[href='menuItem=my-request']")
 	private WebElement myRequest;
 	
-	@FindBy(css="a[href='menuItem=my-free-days']")
+	@FindBy(css="a[href*='menuItem=my-free-days']")
 	private WebElement myFreeDays;
 	
 	@FindBy(css="a[href='menuItem=free-days-history']")
@@ -38,6 +38,7 @@ public class VacationMenu extends PageObject{
 		myRequest.click();
 	}
 	public void clickFreeDays() {
+		element(myFreeDays).waitUntilVisible();
 		myFreeDays.click();
 	}
 	public void clickFreeDaysHistory() {
