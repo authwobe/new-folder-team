@@ -18,6 +18,8 @@ import static ch.lambdaj.Lambda.convert;
 
 @DefaultUrl("http://en.wiktionary.org/wiki/Wiktionary:Main_Page")
 public class DictionaryPage extends PageObject {
+	
+	//eu bag un comment numa sa vedem daca apare la colegu
 
     @FindBy(name="search")
     private WebElementFacade searchTerms;
