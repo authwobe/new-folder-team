@@ -22,5 +22,13 @@ public class VacationMenu extends PageObject{
 	@FindBy(css="a[href='menuItem=vacation-tracker']")
 	private WebElement vacationTracker;
 	
+	@FindBy(css="a[href='menuItem=inbox']")
+	private WebElement inbox;
+	
+	@FindBy(css="a[href='menuItem=view-vacations']")
+	private WebElement viewVacation;
+	
+	@FindBy(css="a[href='menuItem=vacation-report']")
+	private WebElement vacationReport;
 	
 }
