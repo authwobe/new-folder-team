@@ -55,3 +55,4 @@ public class VacationMenu extends PageObject{
 	public void clickVacationReport() {
 		vacationReport.click();
 	}
+}
