@@ -7,31 +7,32 @@ import ch.lambdaj.function.convert.Converter;
 
 public class VacationMenu extends PageObject{
 
-	@FindBy(css="a[href='menuItem=new-request']")
+	@FindBy(css="a[href*='menuItem=new-request']")
 	private WebElement newRequest;
 	
-	@FindBy(css="a[href='menuItem=my-request']")
+	@FindBy(css="a[href*='menuItem=my-request']")
 	private WebElement myRequest;
 	
 	@FindBy(css="a[href*='menuItem=my-free-days']")
 	private WebElement myFreeDays;
 	
-	@FindBy(css="a[href='menuItem=free-days-history']")
+	@FindBy(css="a[href*='menuItem=free-days-history']")
 	private WebElement freeDaysHistory;
 	
-	@FindBy(css="a[href='menuItem=vacation-tracker']")
+	@FindBy(css="a[href*='menuItem=vacation-tracker']")
 	private WebElement vacationTracker;
 	
-	@FindBy(css="a[href='menuItem=inbox']")
+	@FindBy(css="a[href*='menuItem=inbox']")
 	private WebElement inbox;
 	
-	@FindBy(css="a[href='menuItem=view-vacations']")
+	@FindBy(css="a[href*='menuItem=view-vacations']")
 	private WebElement viewVacation;
 	
-	@FindBy(css="a[href='menuItem=vacation-report']")
+	@FindBy(css="a[href*='menuItem=vacation-report']")
 	private WebElement vacationReport;
 	
 	public void clickNewRequest() {
+		element(newRequest).waitUntilVisible();
 		newRequest.click();
 	}
 	public void clickMyRequest() {
