@@ -32,7 +32,13 @@ public class LoginPageSteps extends ScenarioSteps {
 	 LoginPage.clickVacationButton();
  }
  
-
- 
+@Step
+public void inputUsernameMaster(String username){
+	LoginPage.inputUsernameMaster(username);
+}
+@Step
+public void inputPasswordMaster(String password){
+	LoginPage.inputPasswordMaster(password);
+}
  
 }
