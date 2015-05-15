@@ -28,6 +28,14 @@ public class LoginPage extends PageObject {
         inputPassword.sendKeys(password);
     }
 
+    public void inputUsernameMaster (String username) {
+        inputUsername.sendKeys(username);
+    }
+
+    public void inputPasswordMaster (String password) {
+        inputPassword.sendKeys(password);
+    }
+    
     public void clickSignin() {
         clickSignin.click();
     }    
