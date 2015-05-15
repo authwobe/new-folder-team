@@ -31,4 +31,27 @@ public class VacationMenu extends PageObject{
 	@FindBy(css="a[href='menuItem=vacation-report']")
 	private WebElement vacationReport;
 	
-}
+	public void clickNewRequest() {
+		newRequest.click();
+	}
+	public void clickMyRequest() {
+		myRequest.click();
+	}
+	public void clickFreeDays() {
+		myFreeDays.click();
+	}
+	public void clickFreeDaysHistory() {
+		freeDaysHistory.click();
+	}
+	public void clickVacationTracker() {
+		vacationTracker.click();
+	}
+	public void clickInbox() {
+		inbox.click();
+	}
+	public void clickViewvacation() {
+		viewVacation.click();
+	}
+	public void clickVacationReport() {
+		vacationReport.click();
+	}
