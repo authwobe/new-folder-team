@@ -6,7 +6,7 @@ import net.thucydides.core.pages.PageObject;
 
 import org.openqa.selenium.WebElement;
 
-@DefaultUrl("http://172.22.4.88:9090/login")
+@DefaultUrl("http://172.22.4.88:9090")
 public class LoginPage extends PageObject {
 
 	@FindBy(id = "_58_login")
