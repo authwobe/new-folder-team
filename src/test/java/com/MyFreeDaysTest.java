@@ -20,7 +20,7 @@ public class MyFreeDaysTest {
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
 
-	@ManagedPages(defaultUrl = "http://172.22.4.88:9090/login")
+	@ManagedPages(defaultUrl = "http://172.22.4.88:9090/")
 	public Pages pages;
 
 	@Steps
