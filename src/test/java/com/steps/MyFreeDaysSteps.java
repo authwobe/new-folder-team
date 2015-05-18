@@ -27,7 +27,7 @@ public class MyFreeDaysSteps extends ScenarioSteps {
  
  
      @Step
-     public void MyFreeDaysPage (){
+     public void CheckSumOfTotalAvailableFreeDaysLeft (){
     	 MyFreeDaysPage.CheckSum(); 
      }
      

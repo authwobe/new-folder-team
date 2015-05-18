@@ -30,7 +30,6 @@ public class LoginPageSteps extends ScenarioSteps {
 	@Step
 	public void clickSignin() {
 		LoginPage.clickSignin();
-		waitABit(3000);
 	}
 
 	@Step

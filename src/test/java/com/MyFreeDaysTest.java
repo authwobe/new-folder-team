@@ -20,7 +20,7 @@ public class MyFreeDaysTest {
 	@Managed(uniqueSession = true)
 	public WebDriver webdriver;
 
-	@ManagedPages(defaultUrl = "http://172.22.4.88:9090/")
+	@ManagedPages(defaultUrl = "http://172.22.4.88:9090/login")
 	public Pages pages;
 
 	@Steps
@@ -38,7 +38,7 @@ public class MyFreeDaysTest {
 		loginPageSteps.clickSignin();
 		loginPageSteps.clickVacationButton();
 		vacationMenuSteps.clickMyFreeDays();
-		myFreeDaysSteps.MyFreeDaysPage();
+		myFreeDaysSteps.CheckSumOfTotalAvailableFreeDaysLeft();
 		
 	}
 
