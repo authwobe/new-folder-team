@@ -29,7 +29,7 @@ public class LoginPageTest {
      @Test
      public void login_test(){
      LoginPageSteps.is_the_loginPage();
-     LoginPageSteps.inputUsername("mihai.mindrutescu1");
+     LoginPageSteps.inputUsername("mihai.ionce1");
      LoginPageSteps.inputPassword("12345");
      LoginPageSteps.clickSignin();
      LoginPageSteps.clickVacationButton();
