@@ -1,23 +1,12 @@
 package com.pages;
 
-import ch.lambdaj.function.convert.Converter;
 import net.thucydides.core.annotations.DefaultUrl;
-
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-
-import net.thucydides.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.findby.FindBy;
 import net.thucydides.core.pages.PageObject;
+import net.thucydides.core.pages.WebElementFacade;
 
-import java.util.List;
+import org.junit.Assert;
 
-import static ch.lambdaj.Lambda.convert;
-
-@DefaultUrl("http://")
 public class NewVacationRequestPage extends PageObject {
 
  @FindBy(css = "a[href*='menuItem=new-request']")

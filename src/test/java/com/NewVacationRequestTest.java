@@ -1,13 +1,10 @@
 package com;
 
-import mx4j.tools.config.DefaultConfigurationBuilder.Create;
-import net.thucydides.core.annotations.Issue;
+import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.Story;
 import net.thucydides.core.pages.Pages;
-import net.thucydides.core.annotations.Managed;
 import net.thucydides.junit.runners.ThucydidesRunner;
 
 import org.junit.Test;
@@ -47,9 +44,9 @@ public class NewVacationRequestTest {
 		vacationMenuSteps.clickNewRequest();
 		newVacation.start_create_vacation();
         newVacation.click_start_date();
-        newVacation.selectStartDate(9, 1, 2015 );
+        newVacation.selectStartDate(9, 3, 2015 );
         newVacation.click_end_date();
-        newVacation.selectEndDate(9, 2, 2015);
+        newVacation.selectEndDate(9, 4, 2015);
         newVacation.vacation_type();
         newVacation.vacation_type_holiday();
         newVacation.save_your_vacation();
