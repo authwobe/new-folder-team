@@ -1,7 +1,9 @@
 package com;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.pages.Pages;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +16,8 @@ import com.steps.VacationMenuSteps;
 public class VacationMenuTest {
 	@Managed(uniqueSession = true)
     public WebDriver webdriver;
+	@ManagedPages(defaultUrl = "http://172.22.4.88:9090/login")
+    public Pages pages;
 	
 	@Steps
 	public LoginPageSteps loginPageSteps;
