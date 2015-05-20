@@ -22,7 +22,7 @@ public class MyFreeDaysPage extends PageObject {
     	int taken=Integer.parseInt(tableValues.get(4).getText());
     	int total=Integer.parseInt(tableValues.get(5).getText());
     	Boolean equals =false;
-    	for( int i=0;i<4;i++){
+    	for( int i=0;i<4;i++){	
     		int vacdays=Integer.parseInt(tableValues.get(i).getText());
     		sum=sum+vacdays;	
     	}
