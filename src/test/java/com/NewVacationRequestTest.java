@@ -38,23 +38,24 @@ public class NewVacationRequestTest {
 	public void create_vacation_request() throws ParseException, java.text.ParseException {
 		loginPageSteps.is_the_loginPage();
 		loginPageSteps.inputUsername("mihai.ionce1");
-		loginPageSteps.inputPassword("12345");
+		loginPageSteps.inputPassword("123456");
 		loginPageSteps.clickSignin();
 		loginPageSteps.clickVacationButton();
 		vacationMenuSteps.clickNewRequest();
 		newVacation.start_create_vacation();
         newVacation.click_start_date();
-        newVacation.selectStartDate(9, 3, 2015 );
+        newVacation.selectStartDate(10, 12, 2015 );
         newVacation.click_end_date();
-        newVacation.selectEndDate(9, 4, 2015);
+        newVacation.selectEndDate(10, 14, 2015);
         newVacation.vacation_type();
         newVacation.vacation_type_holiday();
         newVacation.save_your_vacation();
-        newVacation.should_see_message("Your request completed successfully. ");
+        newVacation.should_see_message(" Your request completed successfully. ");
 		
     }
-
-    @Pending @Test
-    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
-    }
 }
+//
+//    @Pending @Test
+//    public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
+//    }
+//}
